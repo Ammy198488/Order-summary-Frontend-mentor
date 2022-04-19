@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color:  hsl(225, 100%, 94%);
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+p, a{
+    font-size:  16px;
+}
+main{
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.container .hero {
+    width: 100%;
+    max-width: 400px;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.content{
+    display: flex;
+    justify-content:space-around;
+    background-color: hsl(225, 100%, 98%) ;
+    width: 280px;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+h2{
+    padding-top: 20px;
+}
+.info__1{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin: 0 30px;
+    color: hsl(224, 23%, 55%);
+}
+button{
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+    background-color:  hsl(245, 75%, 52%);
+    border: none;
+    margin: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+}
+p.cancel{
+    margin-bottom: 23px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+.content img{
+    width: 40px;
+}
+.content a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.content a:hover, p.cancel:hover, button:hover{
+    cursor: grabbing;
+    text-decoration: none;
+}
+h4{
+    font-weight: 700;
+}
+span{
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+}
+@media screen and (max-width:375px) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+   main{
+       max-width: 300px;
+   } 
+   .content{
+       width: 250px;
+   }
+}
